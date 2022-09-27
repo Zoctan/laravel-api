@@ -18,11 +18,11 @@ use Illuminate\Http\Request;
  * Welcome route - link to any public API documentation here
  */
 Route::get('/', function () {
-    echo 'Welcome to our API';
+    echo 'Welcome to Laravel-Api!';
 });
 
 /** @var \Dingo\Api\Routing\Router $api */
-$api = app('Dingo\Api\Routing\Router');
+$api = app(Dingo\Api\Routing\Router::class);
 $api->version('v1', ['middleware' => ['api']], function (Router $api) {
     /*
      * Authentication
