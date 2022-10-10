@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Role;
 
-class RoleTableSeeder extends BaseSeeder
+class RoleSeeder extends BaseSeeder
 {
     public function runAlways()
     {
