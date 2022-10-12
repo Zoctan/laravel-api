@@ -29,13 +29,18 @@ $api->version('v1', ['middleware' => ['api']], function (Router $api) {
      * Authentication
      */
     $api->group(['prefix' => 'auth'], function (Router $api) {
-        $api->group(['prefix' => 'jwt'], function (Router $api) {
+        /**
+         * Set a request limit of 3 with an expiration time of 1 minute for getting token
+         * https://github.com/dingo/api/wiki/Rate-Limiting
+         */
+        $api->group(['prefix' => 'jwt', 'middleware' => 'api.throttle', 'limit' => 3, 'expires' => 1], function (Router $api) {
             $api->get('/token', 'App\Http\Controllers\Auth\AuthController@token');
         });
     });
 
     /*
      * Authenticated routes
+     * https://github.com/dingo/api/wiki/Authentication#protecting-endpoints
      */
     $api->group(['middleware' => ['api.auth']], function (Router $api) {
         /*

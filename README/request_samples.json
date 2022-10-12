@@ -1,434 +1,434 @@
 {
-	"info": {
-		"_postman_id": "5be74f90-f6ac-4f84-a882-4762712e8c19",
-		"name": "laravel-api",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4710202"
-	},
-	"item": [
-		{
-			"name": "auth",
-			"item": [
-				{
-					"name": "jwt",
-					"item": [
-						{
-							"name": "token",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/x.myapp.v1+json",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "basic Ym9iQGJvYi5jb206cGFzc3dvcmQ=",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/token",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"path": [
-										"laravel-api",
-										"public",
-										"index.php",
-										"api",
-										"auth",
-										"jwt",
-										"token"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "refresh token",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/x.myapp.v1+json",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NDc2Mjg3LCJleHAiOjE2NjU1NjI2ODcsIm5iZiI6MTY2NTQ3NjI4NywianRpIjoiazh3UUZ2WnJpZGNubXV2YyIsInN1YiI6ImY0ODE2MmJmLTJiZGUtNGZiZS1iZGY5LWI2ZWMzMmVkMzE2ZSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiZjQ4MTYyYmYtMmJkZS00ZmJlLWJkZjktYjZlYzMyZWQzMTZlIiwibmFtZSI6IkJvYiIsInByaW1hcnlSb2xlIjoicmVndWxhciJ9fQ.dS1sXKwqMCp3gtAvm4NkWNFTiT7dAlgUeYFnG3_ELWY",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/refresh",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"path": [
-										"laravel-api",
-										"public",
-										"index.php",
-										"api",
-										"auth",
-										"jwt",
-										"refresh"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "delete token",
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/x.myapp.v1+json",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NDc2Mjg3LCJleHAiOjE2NjU1NjI2ODcsIm5iZiI6MTY2NTQ3NjI4NywianRpIjoiazh3UUZ2WnJpZGNubXV2YyIsInN1YiI6ImY0ODE2MmJmLTJiZGUtNGZiZS1iZGY5LWI2ZWMzMmVkMzE2ZSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiZjQ4MTYyYmYtMmJkZS00ZmJlLWJkZjktYjZlYzMyZWQzMTZlIiwibmFtZSI6IkJvYiIsInByaW1hcnlSb2xlIjoicmVndWxhciJ9fQ.dS1sXKwqMCp3gtAvm4NkWNFTiT7dAlgUeYFnG3_ELWY",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/token",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"path": [
-										"laravel-api",
-										"public",
-										"index.php",
-										"api",
-										"auth",
-										"jwt",
-										"token"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "me",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/auth/me",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"auth",
-								"me"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "users",
-			"item": [
-				{
-					"name": "get all users",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "get a user",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users/5109964a-1b35-47b3-8ff6-5c0c01baaba2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users",
-								"5109964a-1b35-47b3-8ff6-5c0c01baaba2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "create a user",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "create or replace a user",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"testupdate@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users/68c2e51f-b03e-4d3b-8a4f-c40718084274",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users",
-								"68c2e51f-b03e-4d3b-8a4f-c40718084274"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update a user",
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"testupdate@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users/68c2e51f-b03e-4d3b-8a4f-c40718084274",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users",
-								"68c2e51f-b03e-4d3b-8a4f-c40718084274"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "delete a user",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/users/1d276842-ddeb-4f77-a5ff-73694a26d632",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"users",
-								"1d276842-ddeb-4f77-a5ff-73694a26d632"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "roles",
-			"item": [
-				{
-					"name": "get all roles",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/x.myapp.v1+json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost/laravel-api/public/index.php/api/roles",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"laravel-api",
-								"public",
-								"index.php",
-								"api",
-								"roles"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
+    "info": {
+        "_postman_id": "5be74f90-f6ac-4f84-a882-4762712e8c19",
+        "name": "laravel-api",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "4710202"
+    },
+    "item": [
+        {
+            "name": "auth",
+            "item": [
+                {
+                    "name": "jwt",
+                    "item": [
+                        {
+                            "name": "token",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/x.myapp.v1+json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "basic Ym9iQGJvYi5jb206cGFzc3dvcmQ=",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/token",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "path": [
+                                        "laravel-api",
+                                        "public",
+                                        "index.php",
+                                        "api",
+                                        "auth",
+                                        "jwt",
+                                        "token"
+                                    ]
+                                }
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "refresh token",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/x.myapp.v1+json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NDc2Mjg3LCJleHAiOjE2NjU1NjI2ODcsIm5iZiI6MTY2NTQ3NjI4NywianRpIjoiazh3UUZ2WnJpZGNubXV2YyIsInN1YiI6ImY0ODE2MmJmLTJiZGUtNGZiZS1iZGY5LWI2ZWMzMmVkMzE2ZSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiZjQ4MTYyYmYtMmJkZS00ZmJlLWJkZjktYjZlYzMyZWQzMTZlIiwibmFtZSI6IkJvYiIsInByaW1hcnlSb2xlIjoicmVndWxhciJ9fQ.dS1sXKwqMCp3gtAvm4NkWNFTiT7dAlgUeYFnG3_ELWY",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/refresh",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "path": [
+                                        "laravel-api",
+                                        "public",
+                                        "index.php",
+                                        "api",
+                                        "auth",
+                                        "jwt",
+                                        "refresh"
+                                    ]
+                                }
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "delete token",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/x.myapp.v1+json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NDc2Mjg3LCJleHAiOjE2NjU1NjI2ODcsIm5iZiI6MTY2NTQ3NjI4NywianRpIjoiazh3UUZ2WnJpZGNubXV2YyIsInN1YiI6ImY0ODE2MmJmLTJiZGUtNGZiZS1iZGY5LWI2ZWMzMmVkMzE2ZSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiZjQ4MTYyYmYtMmJkZS00ZmJlLWJkZjktYjZlYzMyZWQzMTZlIiwibmFtZSI6IkJvYiIsInByaW1hcnlSb2xlIjoicmVndWxhciJ9fQ.dS1sXKwqMCp3gtAvm4NkWNFTiT7dAlgUeYFnG3_ELWY",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "http://localhost/laravel-api/public/index.php/api/auth/jwt/token",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "path": [
+                                        "laravel-api",
+                                        "public",
+                                        "index.php",
+                                        "api",
+                                        "auth",
+                                        "jwt",
+                                        "token"
+                                    ]
+                                }
+                            },
+                            "response": []
+                        }
+                    ]
+                },
+                {
+                    "name": "me",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/auth/me",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "auth",
+                                "me"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "users",
+            "item": [
+                {
+                    "name": "get all users",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "get a user",
+                    "protocolProfileBehavior": {
+                        "disabledSystemHeaders": {}
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users/5109964a-1b35-47b3-8ff6-5c0c01baaba2",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users",
+                                "5109964a-1b35-47b3-8ff6-5c0c01baaba2"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create a user",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create or replace a user",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"testupdate@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users/68c2e51f-b03e-4d3b-8a4f-c40718084274",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users",
+                                "68c2e51f-b03e-4d3b-8a4f-c40718084274"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "update a user",
+                    "request": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"testupdate@test.com\",\r\n    \"password\": \"password\",\r\n    \"primary_role\": \"a43d297a-5300-4742-aff7-2025fc0d379a\"\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users/68c2e51f-b03e-4d3b-8a4f-c40718084274",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users",
+                                "68c2e51f-b03e-4d3b-8a4f-c40718084274"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "delete a user",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/users/1d276842-ddeb-4f77-a5ff-73694a26d632",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "users",
+                                "1d276842-ddeb-4f77-a5ff-73694a26d632"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "roles",
+            "item": [
+                {
+                    "name": "get all roles",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/x.myapp.v1+json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwtYXBpL3B1YmxpYy9pbmRleC5waHAvYXBpL2F1dGgvand0L3Rva2VuIiwiaWF0IjoxNjY1NTU5MjAzLCJleHAiOjE2NjU2NDU2MDMsIm5iZiI6MTY2NTU1OTIwMywianRpIjoidG5VR25qRjIyTHpYN0xQMCIsInN1YiI6ImE0ZjJkZjdmLWE2MTQtNDU5My04ZmE0LWI3NDRlMDUwM2QwNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1c2VyIjp7ImlkIjoiYTRmMmRmN2YtYTYxNC00NTkzLThmYTQtYjc0NGUwNTAzZDA2IiwibmFtZSI6IkFkbWluIiwicHJpbWFyeVJvbGUiOiJhZG1pbiJ9fQ.r2Pec6DuokEvy1U0KQn5AkApkIaiGrARtjSAVcQHSDY",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/laravel-api/public/index.php/api/roles",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "laravel-api",
+                                "public",
+                                "index.php",
+                                "api",
+                                "roles"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
 }

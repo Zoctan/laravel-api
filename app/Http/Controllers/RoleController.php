@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Role;
-use Illuminate\Http\Request;
 
+/**
+ * Role resource representation.
+ *
+ * @Resource("Roles", uri="/roles")
+ */
 class RoleController extends Controller
 {
     public static $model = Role::class;
