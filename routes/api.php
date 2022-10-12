@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 /*
  * Welcome route - link to any public API documentation here
  */
+
 Route::get('/', function () {
     echo 'Welcome to Laravel-Api!';
 });
